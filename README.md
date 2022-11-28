@@ -5,7 +5,7 @@ a small experimental compress tool for files and directories
 ## Build
 由`CmakeLists.txt`构建
 ## Run
-`main`程序通过命令行指示工作模式
+`main`程序通过命令行参数指示工作模式
 
 + `comp` 
   
