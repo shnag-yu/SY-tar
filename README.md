@@ -12,7 +12,7 @@ a small experimental compress tool for files and directories
     ```
     >>> ./main comp source dest
     ```
-    将被压缩对象`source`的相对路径（可以是文件或者文件夹）压缩到压缩文件`dest`中。
+    将被压缩对象`source`（可以是文件或者文件夹）压缩到压缩文件`dest`中。
 + `uncomp`
 
     ```
