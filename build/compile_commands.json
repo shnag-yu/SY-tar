@@ -1,0 +1,37 @@
+[
+{
+  "directory": "C:/files/DataStructure/pj/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\comp.cpp.obj -c C:\\files\\DataStructure\\pj\\src\\comp.cpp",
+  "file": "C:/files/DataStructure/pj/src/comp.cpp"
+},
+{
+  "directory": "C:/files/DataStructure/pj/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\dirComp.cpp.obj -c C:\\files\\DataStructure\\pj\\src\\dirComp.cpp",
+  "file": "C:/files/DataStructure/pj/src/dirComp.cpp"
+},
+{
+  "directory": "C:/files/DataStructure/pj/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\dirUncomp.cpp.obj -c C:\\files\\DataStructure\\pj\\src\\dirUncomp.cpp",
+  "file": "C:/files/DataStructure/pj/src/dirUncomp.cpp"
+},
+{
+  "directory": "C:/files/DataStructure/pj/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\fileSys.cpp.obj -c C:\\files\\DataStructure\\pj\\src\\fileSys.cpp",
+  "file": "C:/files/DataStructure/pj/src/fileSys.cpp"
+},
+{
+  "directory": "C:/files/DataStructure/pj/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\huffman.cpp.obj -c C:\\files\\DataStructure\\pj\\src\\huffman.cpp",
+  "file": "C:/files/DataStructure/pj/src/huffman.cpp"
+},
+{
+  "directory": "C:/files/DataStructure/pj/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\files\\DataStructure\\pj\\src\\main.cpp",
+  "file": "C:/files/DataStructure/pj/src/main.cpp"
+},
+{
+  "directory": "C:/files/DataStructure/pj/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\uncomp.cpp.obj -c C:\\files\\DataStructure\\pj\\src\\uncomp.cpp",
+  "file": "C:/files/DataStructure/pj/src/uncomp.cpp"
+}
+]
