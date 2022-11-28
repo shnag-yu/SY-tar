@@ -24,4 +24,4 @@ a small experimental compress tool for files and directories
     ```
     >>> ./main display source
     ```
-    不解压压缩文件的情况下展示原文件的结构。
+    在不解压压缩文件的情况下展示原文件的结构。
