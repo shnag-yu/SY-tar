@@ -7,7 +7,9 @@ a small experimental compress tool for files and directories
 
 `main.exe`是我在本地编译的可执行文件。
 ## Run
-`main`程序通过命令行参数指示工作模式
+`main`程序通过命令行参数指示工作模式:
+
+`comp`：压缩、`uncomp`：解压、`display`：展示原文件结构，示例如下。
 
 + `comp` 
   
