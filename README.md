@@ -3,7 +3,9 @@ a small experimental compress tool for files and directories
 
 一个实验性的压缩解压工具，适用于文件与文件夹
 ## Build
-由`CmakeLists.txt`构建
+由`CmakeLists.txt`构建。
+
+`main.exe`是我在本地编译的可执行文件。
 ## Run
 `main`程序通过命令行参数指示工作模式
 
