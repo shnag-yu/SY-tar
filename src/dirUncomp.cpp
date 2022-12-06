@@ -19,7 +19,6 @@ int dirUncomp::createFileTree(int mode)
         return 1;
     }
     unsigned char c = '\0';
-    //std::cout << zipName <<std::endl;
     inFile.close();
     inFile.open(zipName, std::ios::in | std::ios::binary);
     std::string tag;
@@ -40,34 +39,38 @@ int dirUncomp::createFileTree(int mode)
     if(mode == 1)
         if(isInCurDir(rt.string()))
             return 0;
-    // fs::remove_all(current_path()/rt);
-    if(mode == 1)
+    if(mode == 1)   
+    {   
+        fs::remove_all(rt);
         fs::create_directory(current_path()/rt);
-    // std::cout << rt << std::endl;
+    }
     Entry.emplace_back(1, rt, 0);
     char cc;
     while(inFile.read((char*)&cc, sizeof(char)))
     {
         if(cc==(char)255)
         {
+            inFile.read((char*)&cc, sizeof(char));
+            inFile.seekg(-1, std::ios::cur);
+            if(cc != '\"')
+                continue;
+            auto tmp = inFile.tellg();
             inFile >> p;
             if(p.string().find(rt.string()+"\\") == 0)
             {
-                // std::cout <<p.string().find(rt.string()+"\\")<<std::endl;
-                // std::cout << p << std::endl;
                 char ccc;
                 inFile.read((char*)&cc, sizeof(char));
                 inFile.read((char*)&ccc, sizeof(char));
                 if(cc == (char)254 && ccc == (char)254)
                 {
-                    // std::cout << "file\n";
-                    // std::cout << "pos: " << inFile.tellg() << std::endl;
                     if(mode == 0)
                         Entry.emplace_back(0, p, 0);
                     if(mode == 1)
                     {
                         uncomp* uncomp_ = new uncomp(zipName, inFile.tellg());
                         uncomp_->work();
+                        delete uncomp_;
+                        // inFile.seekg(uncomp_->getP());
                     }
                 }
                 else{
@@ -78,6 +81,8 @@ int dirUncomp::createFileTree(int mode)
                         fs::create_directory(current_path()/p);
                 }
             }
+            else
+                inFile.seekg(tmp);
         }
     }
     return 0;
@@ -87,7 +92,6 @@ int getPre(path pre, path p)
 {
     std::string p1 = pre.string();
     std::string p2 = p.string();
-    // std::cout << p1 << "  " <<p2<<std::endl;
     if(p2.find(p1) < p2.size())
         return 1;
     return 0;
@@ -105,10 +109,8 @@ int dirUncomp::display()
         while(!s.empty())
         {
             pre = s.top();
-            // std::cout << getPre(pre.p, (*i).p) <<std::endl;
             if(getPre(pre.p, (*i).p))
             {
-                //tmp = fs::relative(pre.p, (*i).p);
                 (*i).blank = pre.blank + 4;
                 s.push(*i);
                 break;

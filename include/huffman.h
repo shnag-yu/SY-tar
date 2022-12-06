@@ -19,7 +19,9 @@ public:
     bool isEmpty(){return root == nullptr;}
     void create(std::vector<node*>& byteVrctor);
     int getWPL(){return root->getVal();}
-    std::map<char,std::string> getHuffmanCode();    
+    std::map<char,std::string> getHuffmanCode();
+    // ~huffman();    
+    void dfsFree(node* cur);
 };
 }
 

@@ -1,0 +1,37 @@
+[
+{
+  "directory": "C:/files/SY-tar/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\comp.cpp.obj -c C:\\files\\SY-tar\\src\\comp.cpp",
+  "file": "C:/files/SY-tar/src/comp.cpp"
+},
+{
+  "directory": "C:/files/SY-tar/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\dirComp.cpp.obj -c C:\\files\\SY-tar\\src\\dirComp.cpp",
+  "file": "C:/files/SY-tar/src/dirComp.cpp"
+},
+{
+  "directory": "C:/files/SY-tar/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\dirUncomp.cpp.obj -c C:\\files\\SY-tar\\src\\dirUncomp.cpp",
+  "file": "C:/files/SY-tar/src/dirUncomp.cpp"
+},
+{
+  "directory": "C:/files/SY-tar/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\fileSys.cpp.obj -c C:\\files\\SY-tar\\src\\fileSys.cpp",
+  "file": "C:/files/SY-tar/src/fileSys.cpp"
+},
+{
+  "directory": "C:/files/SY-tar/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\huffman.cpp.obj -c C:\\files\\SY-tar\\src\\huffman.cpp",
+  "file": "C:/files/SY-tar/src/huffman.cpp"
+},
+{
+  "directory": "C:/files/SY-tar/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c C:\\files\\SY-tar\\src\\main.cpp",
+  "file": "C:/files/SY-tar/src/main.cpp"
+},
+{
+  "directory": "C:/files/SY-tar/build",
+  "command": "C:\\PROGRA~2\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/main.dir/includes_CXX.rsp  -g -O3 -fprofile-arcs -ftest-coverage -g -o CMakeFiles\\main.dir\\src\\uncomp.cpp.obj -c C:\\files\\SY-tar\\src\\uncomp.cpp",
+  "file": "C:/files/SY-tar/src/uncomp.cpp"
+}
+]

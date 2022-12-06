@@ -26,7 +26,7 @@ public:
     comp(std::string in, std::string out,int);
     int readFile();
     int huffmanEncode();
-    int freqCount(std::vector<int>& freq); 
+    // int freqCount(std::vector<int>& freq); 
     int writeHead();
     int writeBody();
     int work();    

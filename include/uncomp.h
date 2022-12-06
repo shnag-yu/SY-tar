@@ -28,6 +28,7 @@ public:
     int huffmanEncode(); 
     int write();
     int work();
+    std::streampos getP(){return p;}
     int display();     
 };
 }

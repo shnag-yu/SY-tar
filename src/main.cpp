@@ -101,21 +101,8 @@ int main(int argc,char *argv[])
         }
         return 0;
     }
-
-    // fileNode* root = new fileNode(fs::current_path()/"Folder");
-    // dirComp* dirComp_ = new dirComp(root, "Folder", "dir.comp");
-    // dirComp_->recursion(dirComp_->getDirParh(), dirComp_->getRoot());
-    // dirComp_->close();
-    // delete dirComp_;
-    // std::ifstream in("dir.comp", std::ios::in);
-    // std::string headTag;
-    // in >> headTag;
-    // in.close();
-    // std::cout << headTag << std::endl;
-    // dirUncomp* dirUncomp_ = new dirUncomp("dir.comp");
-    // // dirUncomp_->createFileTree();
-    // dirUncomp_->display();
-    // uncomp* uncomp_ = new uncomp("test.comp");
-    // uncomp_->display();
-    // return 0;
+    // dirUncomp* dirUncomp_ = new dirUncomp("test.comp");
+    // dirUncomp_->createFileTree(1);
+    // delete dirUncomp_;
+    
 }

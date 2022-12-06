@@ -5,6 +5,26 @@
 
 using namespace Compress;
 
+void huffman::dfsFree(node* cur)
+{
+    if(cur != nullptr)
+    {
+        if(cur->getLeft() != nullptr)
+        {
+            dfsFree(cur->getLeft());
+            cur->left  = nullptr;
+        }
+        if(cur->getRight() != nullptr)
+        {
+            dfsFree(cur->getRight());
+            cur->right = nullptr;
+        }
+        delete cur;
+        cur = nullptr;
+    } 
+}
+
+
 bool cmp(node* a, node* b)
 {
     return a->getVal() > b->getVal();
@@ -30,10 +50,8 @@ void huffman::create(std::vector<node*>& byteVector)
         heap.pop();
         node* newFather = new node(-1, newLeft->getVal() + newRight->getVal(), newLeft, newRight);
         heap.push(newFather);
-        //delete newFather;
     }
     root = heap.top();
-    //std::cout << "WPL = " << root->getVal() << std::endl;
 }
 
 
@@ -60,8 +78,6 @@ std::map<char,std::string> huffman::getHuffmanCode()
         }
         if(cur->isLeaf())
         {
-            // std::cout << (int)cur->getIdx() << ": " << cur->getVal() << " " 
-            //         << cur->code << std::endl;
             
             huffmanCode[cur->getIdx()] = cur->code;
         }

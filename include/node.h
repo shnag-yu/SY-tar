@@ -10,12 +10,12 @@ class node
 private:
     char idx;
     int val;
-    node* left;
-    node* right;
 public:
     node();
     node(int i,int v, node* l, node* r){idx = i; val = v; left = l; right =r;}
     std::string code;
+    node* left;
+    node* right;
     int getVal(){return val;}
     char getIdx(){return idx;}
     node* getLeft(){return left;}
